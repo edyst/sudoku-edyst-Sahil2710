@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -7,52 +7,49 @@ body {
   font-size: 25px;
 }
 
-#sudoku-grid{
-    border-collapse: collapse;
-    margin: auto;
-    border:1px solid #344861;
-    padding: 0;
+#sudoku-grid {
+  border-collapse: collapse;
+  margin: auto;
+  border: 1px solid #344861;
+  padding: 0;
 }
 
-.cell{
-    height: 60px;
-    width: 60px;
-    padding: 0;
-    border:1px solid #bec6d4;
+.cell {
+  height: 60px;
+  width: 60px;
+  padding: 0;
+  border: 1px solid #bec6d4;
 }
 
-.cbtm{
-    border-bottom:2px solid #344861;
+.cbtm {
+  border-bottom: 2px solid #344861;
 }
-.ctop{
-    border-top:2px solid #344861;
+.ctop {
+  border-top: 2px solid #344861;
 }
-.cRight{
-    border-right:2px solid #344861;
-}
-
-.cLeft{
-    border-left:2px solid #344861;
+.cRight {
+  border-right: 2px solid #344861;
 }
 
-
-.cell input
-{
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 10px;
-    text-align: center;
-    font-size: 25px;
-    color: black;
+.cLeft {
+  border-left: 2px solid #344861;
 }
 
-.cell input:hover{
-    background-color: rgb(195,215,234);
-    color: black;
+.cell input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
 }
 
+.cell input:hover {
+  background-color: rgb(195, 215, 234);
+  color: black;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -60,35 +57,50 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.div{
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-    column-gap: 15vw;
-    height: 45px;
+.div {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  column-gap: 15vw;
+  height: 45px;
 }
 
-.btn{
-    font-size: 22px;
-    width: 100px;
-    border: none;
-    border-radius: 3px;
+.btn {
+  font-size: 22px;
+  width: 100px;
+  border: none;
+  border-radius: 3px;
 }
 
-.btn:hover{
-    border:2px solid rgb(121, 197, 228);
-    cursor: pointer;
+.btn:hover {
+  border: 2px solid rgb(121, 197, 228);
+  cursor: pointer;
 }
 
-.highlight{
-    background-color: rgb(183, 220, 235);
+.highlight {
+  background-color: rgb(183, 220, 235);
 }
 
-.disabled{
-    background-color:#e8ecda ;
-    color: black;
+.disabled {
+  background-color: #e8ecda;
+  color: black;
+  pointer-events: none;
 }
 
-.disabled:hover{
-    cursor:not-allowed;
+.result {
+    display: block;
+  text-align: center;
+  color: #cfc547;
+
+  text-shadow: 10px 10px 25px rgb(81, 67, 21), -10px 10px 25px rgb(81, 67, 21),
+    -10px -10px 25px rgb(81, 67, 21), 10px -10px 25px rgb(81, 67, 21);
+  background-color: black;
+
+  margin: 25px;
+  padding: 10px;
+}
+
+.lightUp{
+    box-shadow: 10px 10px 25px rgb(81, 67, 21), -10px 10px 25px rgb(81, 67, 21),
+    -10px -10px 25px rgb(81, 67, 21), 10px -10px 25px rgb(81, 67, 21);
 }
