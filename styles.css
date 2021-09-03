@@ -49,11 +49,14 @@ body {
 .cell input:hover {
   background-color: rgb(187,222,251);
   color: black;
+  cursor: pointer;
 }
 
 .cell input:focus {
   background-color: rgb(187,222,251);
   color: black;
+  caret-color: transparent;
+
 }
 
 input::-webkit-outer-spin-button,
